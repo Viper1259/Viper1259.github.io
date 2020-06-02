@@ -1,9 +1,11 @@
-~~~
+---
 layout: single
 title:  "Approximating the value of Pi"
 date:   2020-06-02 17:23:22 +0900
 categories: jekyll update
-~~~
+---
+
+
 
 ### 오일러 곱셈 공식을 이용한 파이의 근사치 구하기.
 
