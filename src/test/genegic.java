@@ -6,7 +6,7 @@ import java.util.Collections;
 import java.util.Random;
 
 public class genegic {
-    // y=-x^2+46x+55
+    // y=-x^2+26x+55
 
     public static double fx(double x) {
         return -x*x+46*x+55;
