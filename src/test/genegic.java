@@ -99,16 +99,16 @@ public class genegic {
 
             Random rand = new Random();
             double[] f = new double[mx.length];
+            double []rn=new double[mx.length];
             double max = 0;
             for(int t=0;t<mx.length;t++) {
-            	double []rn=new double[mx.length];
             	rn[t] = mx[t]+rand.nextGaussian();
             	System.out.printf("(%.2f, ",rn[t]);
-            	System.out.printf("%.2f) ",fx(rn[t])+(rand.nextGaussian()));
+            	System.out.printf("%.2f) ",fx(rn[t]));
             }
             System.out.println();
             for(int j = 0; j <mx.length; j++) {
-                f[j] =1/Math.pow(fx(mx[j])-(fx(mx[j])+rand.nextGaussian()),2);
+                f[j] =Math.sqrt(Math.pow(fx(mx[j])-(fx(rn[j])),2));
                 max = Math.max(max, f[j]);
                 System.out.printf("%.2f ", f[j]);
             }
